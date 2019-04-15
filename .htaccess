@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !\.(css|gif|ico|jpg|js|png|swf|txt|tpl)$
+  RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
